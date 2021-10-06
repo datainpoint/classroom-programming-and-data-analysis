@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
 
-<title>02-data-types-and-structures-in-python slides</title><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>03-data-structures-in-python slides</title><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 <!-- General and theme style sheets -->
 <link rel="stylesheet" href="https://unpkg.com/reveal.js@4.0.2/dist/reveal.css">
@@ -14385,7 +14385,7 @@ div.jp-OutputPrompt {
 <div class="slides"><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Programming-and-Data-Analysis">Programming and Data Analysis<a class="anchor-link" href="#Programming-and-Data-Analysis">&#182;</a></h1><blockquote><p>Data Types in Python</p>
+<h1 id="Programming-and-Data-Analysis">Programming and Data Analysis<a class="anchor-link" href="#Programming-and-Data-Analysis">&#182;</a></h1><blockquote><p>Data Structures in Python</p>
 </blockquote>
 <p>Kuo, Yao-Jen <a href="mailto:yaojenkuo@ntu.edu.tw">yaojenkuo@ntu.edu.tw</a> from <a href="https://www.datainpoint.com/">DATAINPOINT</a></p>
 
@@ -14393,12 +14393,61 @@ div.jp-OutputPrompt {
 </div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Variables">Variables<a class="anchor-link" href="#Variables">&#182;</a></h2>
+<h2 id="Data-Structure">Data Structure<a class="anchor-link" href="#Data-Structure">&#182;</a></h2>
 </div>
 </div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="It-is-quite-useless-by-printing-out-literal-values">It is quite useless by printing out literal values<a class="anchor-link" href="#It-is-quite-useless-by-printing-out-literal-values">&#182;</a></h2>
+<h2 id="What-is-a-data-structure?">What is a data structure?<a class="anchor-link" href="#What-is-a-data-structure?">&#182;</a></h2><blockquote><p>In computer science, a data structure is a data organization, management, and storage format that enables efficient access and modification. More precisely, a data structure is a collection of data values, the relationships among them, and the functions or operations that can be applied to the data.</p>
+</blockquote>
+<p>Source: <a href="https://en.wikipedia.org/wiki/Data_structure">https://en.wikipedia.org/wiki/Data_structure</a></p>
+
+</div>
+</div></section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Why-data-structure?">Why data structure?<a class="anchor-link" href="#Why-data-structure?">&#182;</a></h2><p>As a software engineer, the main job is to perform operations on data, we can simplify that operation into:</p>
+<ol>
+<li>Take some input</li>
+<li>Process it</li>
+<li>Return the output</li>
+</ol>
+<p>Quite similar to what we've got from the definition of a function.</p>
+
+</div>
+</div></section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="To-make-the-process-efficient,-we-need-to-optimize-it-via-data-structure">To make the process efficient, we need to optimize it via data structure<a class="anchor-link" href="#To-make-the-process-efficient,-we-need-to-optimize-it-via-data-structure">&#182;</a></h2><p>Data structure decides how and where we put the data to be processed. A good choice of data structure can enhance our efficiency.</p>
+
+</div>
+</div></section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="We-will-talk-about-4-built-in-data-structures-in-Python">We will talk about 4 built-in data structures in Python<a class="anchor-link" href="#We-will-talk-about-4-built-in-data-structures-in-Python">&#182;</a></h2><ul>
+<li><code>list</code></li>
+<li><code>tuple</code></li>
+<li><code>dict</code> as in dictionary</li>
+<li><code>set</code></li>
+</ul>
+
+</div>
+</div></section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Built-in-data-structures-refer-to-those-need-no-self-definition-or-importing">Built-in data structures refer to those need no self-definition or importing<a class="anchor-link" href="#Built-in-data-structures-refer-to-those-need-no-self-definition-or-importing">&#182;</a></h2><p>Quite similar to the comparison of built-in functions vs. self-defined/third party functions.</p>
+
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Built-in-Data-Structure:-list">Built-in Data Structure: <code>list</code><a class="anchor-link" href="#Built-in-Data-Structure:-list">&#182;</a></h2>
+</div>
+</div></section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Lists">Lists<a class="anchor-link" href="#Lists">&#182;</a></h2><p>Lists are the basic ordered and mutable data collection type in Python. They can be defined with comma-separated values between square brackets.</p>
+
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
@@ -14406,7 +14455,9 @@ div.jp-OutputPrompt {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello, world!&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">primes</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">11</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">primes</span><span class="p">))</span> <span class="c1"># use type() to check type</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">primes</span><span class="p">))</span>  <span class="c1"># use len() to check how many elements are stored in the list</span>
 </pre></div>
 
      </div>
@@ -14426,7 +14477,8 @@ div.jp-OutputPrompt {
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Hello, world!
+<pre>&lt;class &#39;list&#39;&gt;
+5
 </pre>
 </div>
 </div>
@@ -14438,17 +14490,33 @@ div.jp-OutputPrompt {
 </div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="It-is-more-useful-to-refer-a-literal-value-by-an-object-name">It is more useful to refer a literal value by an object name<a class="anchor-link" href="#It-is-more-useful-to-refer-a-literal-value-by-an-object-name">&#182;</a></h2>
+<h2 id="Lists-have-a-number-of-useful-methods">Lists have a number of useful methods<a class="anchor-link" href="#Lists-have-a-number-of-useful-methods">&#182;</a></h2><ul>
+<li><code>.append()</code></li>
+<li><code>.pop()</code></li>
+<li><code>.remove()</code></li>
+<li><code>.insert()</code></li>
+<li><code>.sort()</code></li>
+<li>...etc.</li>
+</ul>
+<p>We can use <code>TAB</code> and <code>SHIFT - TAB</code> for documentation prompts in a notebook environment.</p>
+
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">hello_world</span> <span class="o">=</span> <span class="s2">&quot;Hello, world!&quot;</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">hello_world</span><span class="o">.</span><span class="n">swapcase</span><span class="p">())</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">hello_world</span><span class="o">.</span><span class="n">title</span><span class="p">())</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">primes</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">13</span><span class="p">)</span> <span class="c1"># appending an element to the end of a list</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">primes</span><span class="p">)</span>
+<span class="n">primes</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span> <span class="c1"># popping out the last element of a list</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">primes</span><span class="p">)</span>
+<span class="n">primes</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="c1"># removing the first occurance of an element within a list</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">primes</span><span class="p">)</span>
+<span class="n">primes</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="c1"># inserting certain element at a specific index</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">primes</span><span class="p">)</span>
+<span class="n">primes</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="c1"># sorting a list, reverse=False =&gt; ascending order; reverse=True =&gt; descending order</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">primes</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14468,8 +14536,11 @@ div.jp-OutputPrompt {
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>hELLO, WORLD!
-Hello, World!
+<pre>[2, 3, 5, 7, 11, 13]
+[2, 3, 5, 7, 11]
+[3, 5, 7, 11]
+[2, 3, 5, 7, 11]
+[11, 7, 5, 3, 2]
 </pre>
 </div>
 </div>
@@ -14481,47 +14552,16 @@ Hello, World!
 </div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="A-variable-is-a-name-that-refers-to-a-value">A variable is a name that refers to a value<a class="anchor-link" href="#A-variable-is-a-name-that-refers-to-a-value">&#182;</a></h2><div class="highlight"><pre><span></span><span class="n">variable_name</span> <span class="o">=</span> <span class="n">literal_value</span>
-</pre></div>
-
-</div>
-</div></section><section>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Choose-names-for-our-variables:-don'ts">Choose names for our variables: don'ts<a class="anchor-link" href="#Choose-names-for-our-variables:-don'ts">&#182;</a></h2><ul>
-<li>Do not use built-in functions.</li>
-<li>Cannot use <a href="https://docs.python.org/3/reference/lexical_analysis.html#keywords">keywords</a>.</li>
-<li>Cannot start with numbers.</li>
+<h2 id="Python-provides-access-to-elements-in-compound-types-through">Python provides access to elements in compound types through<a class="anchor-link" href="#Python-provides-access-to-elements-in-compound-types-through">&#182;</a></h2><ul>
+<li><strong>indexing</strong> for a single element</li>
+<li><strong>slicing</strong> for multiple elements</li>
 </ul>
-<p>Source: <a href="https://www.python.org/dev/peps/pep-0008/">https://www.python.org/dev/peps/pep-0008/</a></p>
 
 </div>
 </div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="If-you-accidentally-replaced-built-in-function-with-variable,-use-del-to-release-it">If you accidentally replaced built-in function with variable, use <code>del</code> to release it<a class="anchor-link" href="#If-you-accidentally-replaced-built-in-function-with-variable,-use-del-to-release-it">&#182;</a></h2><div class="highlight"><pre><span></span><span class="nb">print</span> <span class="o">=</span> <span class="mi">5566</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello, world!&quot;</span><span class="p">)</span>
-<span class="c1">#del print</span>
-<span class="c1">#print(&quot;Hello, world!&quot;)</span>
-</pre></div>
-
-</div>
-</div></section><section>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Choose-names-for-our-variables:-dos">Choose names for our variables: dos<a class="anchor-link" href="#Choose-names-for-our-variables:-dos">&#182;</a></h2><ul>
-<li>Use a lowercase single letter, word, or words.</li>
-<li>Separate words with underscores to improve readability(so-called snake case).</li>
-<li>Be meaningful.</li>
-</ul>
-<p>Source: <a href="https://www.python.org/dev/peps/pep-0008/">https://www.python.org/dev/peps/pep-0008/</a></p>
-
-</div>
-</div></section><section>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Using-#-to-write-comments-in-our-program">Using <code>#</code> to write comments in our program<a class="anchor-link" href="#Using-#-to-write-comments-in-our-program">&#182;</a></h2><p>Comments can appear on a line by itself, or at the end of a line.</p>
-
+<h2 id="Python-uses-zero-based-indexing">Python uses zero-based indexing<a class="anchor-link" href="#Python-uses-zero-based-indexing">&#182;</a></h2>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
@@ -14529,13 +14569,9 @@ Hello, World!
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Turn fahrenheit to celsius</span>
-<span class="k">def</span> <span class="nf">from_fahrenheit_to_celsius</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="n">out</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span> <span class="o">-</span> <span class="mi">32</span><span class="p">)</span> <span class="o">*</span> <span class="mi">5</span><span class="o">/</span><span class="mi">9</span>
-    <span class="k">return</span> <span class="n">out</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">from_fahrenheit_to_celsius</span><span class="p">(</span><span class="mi">32</span><span class="p">))</span>  <span class="c1"># turn 32 fahrenheit to celsius</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">from_fahrenheit_to_celsius</span><span class="p">(</span><span class="mi">212</span><span class="p">))</span> <span class="c1"># turn 212 fahrenheit to celsius</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">primes</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">primes</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="c1"># the first element</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">primes</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="c1"># the second element</span>
 </pre></div>
 
      </div>
@@ -14555,8 +14591,8 @@ Hello, World!
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>0.0
-100.0
+<pre>2
+3
 </pre>
 </div>
 </div>
@@ -14568,28 +14604,7 @@ Hello, World!
 </div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Everything-from-#-to-the-end-of-the-line-is-ignored-during-execution">Everything from <code>#</code> to the end of the line is ignored during execution<a class="anchor-link" href="#Everything-from-#-to-the-end-of-the-line-is-ignored-during-execution">&#182;</a></h2>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Data-Types">Data Types<a class="anchor-link" href="#Data-Types">&#182;</a></h2>
-</div>
-</div></section><section>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Values-belong-to-different-types,-we-commonly-use">Values belong to different types, we commonly use<a class="anchor-link" href="#Values-belong-to-different-types,-we-commonly-use">&#182;</a></h2><ul>
-<li><code>int</code> and <code>float</code> for numeric computing.</li>
-<li><code>str</code> for symbolic.</li>
-<li><code>bool</code> for conditionals.</li>
-<li><code>NoneType</code> for undefined values.</li>
-</ul>
-
-</div>
-</div></section><section>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Use-type-function-to-check-the-type-of-a-certain-value/variable">Use <code>type</code> function to check the type of a certain value/variable<a class="anchor-link" href="#Use-type-function-to-check-the-type-of-a-certain-value/variable">&#182;</a></h2>
+<h2 id="Elements-at-the-end-of-the-list-can-be-accessed-with-negative-numbers,-starting-from--1">Elements at the end of the list can be accessed with negative numbers, starting from -1<a class="anchor-link" href="#Elements-at-the-end-of-the-list-can-be-accessed-with-negative-numbers,-starting-from--1">&#182;</a></h2>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
@@ -14597,12 +14612,8 @@ Hello, World!
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="mi">5566</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="mf">42.195</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="s2">&quot;Hello, world!&quot;</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="kc">True</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="kc">False</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="kc">None</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">primes</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="c1"># the last element</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">primes</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">])</span> <span class="c1"># the second last element</span>
 </pre></div>
 
      </div>
@@ -14622,12 +14633,8 @@ Hello, World!
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>&lt;class &#39;int&#39;&gt;
-&lt;class &#39;float&#39;&gt;
-&lt;class &#39;str&#39;&gt;
-&lt;class &#39;bool&#39;&gt;
-&lt;class &#39;bool&#39;&gt;
-&lt;class &#39;NoneType&#39;&gt;
+<pre>11
+7
 </pre>
 </div>
 </div>
@@ -14639,21 +14646,25 @@ Hello, World!
 </div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="How-to-form-a-str?">How to form a <code>str</code>?<a class="anchor-link" href="#How-to-form-a-str?">&#182;</a></h2><p>Use paired <code>'</code>, <code>"</code>, or <code>"""</code> to embrace letters strung together.</p>
+<h2 id="While-indexing-means-fetching-a-single-value-from-the-list,-slicing-means-accessing-multiple-values-in-sub-lists">While indexing means fetching a single value from the list, slicing means accessing multiple values in sub-lists<a class="anchor-link" href="#While-indexing-means-fetching-a-single-value-from-the-list,-slicing-means-accessing-multiple-values-in-sub-lists">&#182;</a></h2><ul>
+<li>start(inclusive)</li>
+<li>stop(non-inclusive)</li>
+<li>step</li>
+</ul>
+<div class="highlight"><pre><span></span><span class="c1"># slicing syntax</span>
+<span class="n">OUR_LIST</span><span class="p">[</span><span class="n">start</span><span class="p">:</span><span class="n">stop</span><span class="p">:</span><span class="n">step</span><span class="p">]</span>
+</pre></div>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">str_with_single_quotes</span> <span class="o">=</span> <span class="s1">&#39;Hello, world!&#39;</span>
-<span class="n">str_with_double_quotes</span> <span class="o">=</span> <span class="s2">&quot;Hello, world!&quot;</span>
-<span class="n">str_with_triple_double_quotes</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;Hello, world!&quot;&quot;&quot;</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">str_with_single_quotes</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">str_with_double_quotes</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">str_with_triple_double_quotes</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">primes</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">:</span><span class="mi">1</span><span class="p">])</span> <span class="c1"># slicing the first 3 elements</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">primes</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">:</span><span class="nb">len</span><span class="p">(</span><span class="n">primes</span><span class="p">):</span><span class="mi">1</span><span class="p">])</span> <span class="c1"># slicing the last 3 elements </span>
+<span class="nb">print</span><span class="p">(</span><span class="n">primes</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="nb">len</span><span class="p">(</span><span class="n">primes</span><span class="p">):</span><span class="mi">2</span><span class="p">])</span> <span class="c1"># slicing every second element</span>
 </pre></div>
 
      </div>
@@ -14673,9 +14684,9 @@ Hello, World!
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>&lt;class &#39;str&#39;&gt;
-&lt;class &#39;str&#39;&gt;
-&lt;class &#39;str&#39;&gt;
+<pre>[2, 3, 5]
+[5, 7, 11]
+[2, 5, 11]
 </pre>
 </div>
 </div>
@@ -14687,102 +14698,24 @@ Hello, World!
 </div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="If-we-have-single/double-quotes-in-str-values-we-might-have-SyntaxError">If we have single/double quotes in <code>str</code> values we might have <code>SyntaxError</code><a class="anchor-link" href="#If-we-have-single/double-quotes-in-str-values-we-might-have-SyntaxError">&#182;</a></h2><div class="highlight"><pre><span></span><span class="n">mcd</span> <span class="o">=</span> <span class="s1">&#39;I&#39;</span><span class="n">m</span> <span class="n">lovin</span><span class="s1">&#39; it!&#39;</span>
-</pre></div>
+<h2 id="If-leaving-out,-it-defaults-to">If leaving out, it defaults to<a class="anchor-link" href="#If-leaving-out,-it-defaults-to">&#182;</a></h2><ul>
+<li>start: 0</li>
+<li>stop: len(list)</li>
+<li>step: 1</li>
+</ul>
+<p>So we can do the same slicing with defaults.</p>
 
 </div>
-</div></section><section>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Use-\-to-escape-or-paired-&quot;-or-paired-&quot;&quot;&quot;">Use <code>\</code> to escape or paired <code>"</code> or paired <code>"""</code><a class="anchor-link" href="#Use-\-to-escape-or-paired-&quot;-or-paired-&quot;&quot;&quot;">&#182;</a></h2>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">mcd</span> <span class="o">=</span> <span class="s1">&#39;I</span><span class="se">\&#39;</span><span class="s1">m lovin</span><span class="se">\&#39;</span><span class="s1"> it!&#39;</span>
-<span class="n">mcd</span> <span class="o">=</span> <span class="s2">&quot;I&#39;m lovin&#39; it!&quot;</span>
-<span class="n">mcd</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;I&#39;m lovin&#39; it!&quot;&quot;&quot;</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div></section><section>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Great-features-of-strings-formed-with-paired-&quot;&quot;&quot;">Great features of strings formed with paired <code>"""</code><a class="anchor-link" href="#Great-features-of-strings-formed-with-paired-&quot;&quot;&quot;">&#182;</a></h2><ul>
-<li>A paragraph</li>
-<li>Docstring</li>
-</ul>
-
-</div>
-</div></section><section>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Use-paired-&quot;&quot;&quot;-for-a-paragraph">Use paired <code>"""</code> for a paragraph<a class="anchor-link" href="#Use-paired-&quot;&quot;&quot;-for-a-paragraph">&#182;</a></h2>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">storyline</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">Chronicles the experiences of a formerly successful banker</span><span class="se">\</span>
-<span class="s2"> as a prisoner in the gloomy jailhouse of Shawshank after</span><span class="se">\</span>
-<span class="s2"> being found guilty of a crime he did not commit. The film</span><span class="se">\</span>
-<span class="s2"> portrays the man&#39;s unique way of dealing with his new, torturous</span><span class="se">\</span>
-<span class="s2"> life; along the way he befriends a number of fellow prisoners,</span><span class="se">\</span>
-<span class="s2"> most notably a wise long-term inmate named Red.</span>
-<span class="s2">&quot;&quot;&quot;</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sql_query</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">SELECT *</span>
-<span class="s2">  FROM world</span>
-<span class="s2"> WHERE country = &#39;Taiwan&#39;;</span>
-<span class="s2">&quot;&quot;&quot;</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div></section><section>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Use-paired-&quot;&quot;&quot;-for-docstring">Use paired <code>"""</code> for docstring<a class="anchor-link" href="#Use-paired-&quot;&quot;&quot;-for-docstring">&#182;</a></h2>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">from_fahrenheit_to_celsius</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Turns fahrenheit to celsius.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">return</span> <span class="p">(</span><span class="n">x</span> <span class="o">-</span> <span class="mi">32</span><span class="p">)</span> <span class="o">*</span> <span class="mi">5</span><span class="o">/</span><span class="mi">9</span>
-
-<span class="n">help</span><span class="p">(</span><span class="n">from_fahrenheit_to_celsius</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">primes</span><span class="p">[:</span><span class="mi">3</span><span class="p">])</span> <span class="c1"># slicing the first 3 elements</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">primes</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">:])</span> <span class="c1"># slicing the last 3 elements </span>
+<span class="nb">print</span><span class="p">(</span><span class="n">primes</span><span class="p">[::</span><span class="mi">2</span><span class="p">])</span> <span class="c1"># slicing every second element</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">primes</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="c1"># a particularly useful tip is to specify a negative step</span>
 </pre></div>
 
      </div>
@@ -14802,11 +14735,59 @@ Hello, World!
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Help on function from_fahrenheit_to_celsius in module __main__:
+<pre>[2, 3, 5]
+[5, 7, 11]
+[2, 5, 11]
+[11, 7, 5, 3, 2]
+</pre>
+</div>
+</div>
 
-from_fahrenheit_to_celsius(x)
-    Turns fahrenheit to celsius.
+</div>
 
+</div>
+
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Built-in-Data-Structure:-tuple">Built-in Data Structure: <code>tuple</code><a class="anchor-link" href="#Built-in-Data-Structure:-tuple">&#182;</a></h2>
+</div>
+</div></section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Tuples">Tuples<a class="anchor-link" href="#Tuples">&#182;</a></h2><p>Tuples are in many ways similar to lists, but they are defined with parentheses rather than square brackets.</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">primes</span> <span class="o">=</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">11</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">primes</span><span class="p">))</span> <span class="c1"># use type() to check type</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">primes</span><span class="p">))</span>  <span class="c1"># use len() to check how many elements are stored in the list</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>&lt;class &#39;tuple&#39;&gt;
+5
 </pre>
 </div>
 </div>
@@ -14818,17 +14799,96 @@ from_fahrenheit_to_celsius(x)
 </div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="We've-seen-arithmetic-operators-for-numeric-values">We've seen arithmetic operators for numeric values<a class="anchor-link" href="#We've-seen-arithmetic-operators-for-numeric-values">&#182;</a></h2><p>How about those for <code>str</code>?</p>
+<h2 id="The-main-distinguishing-feature-of-tuples-is-that-they-are-immutable">The main distinguishing feature of tuples is that they are immutable<a class="anchor-link" href="#The-main-distinguishing-feature-of-tuples-is-that-they-are-immutable">&#182;</a></h2><p>Once they are created, their size and contents cannot be changed.</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">primes</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">11</span><span class="p">]</span>
+<span class="n">primes</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">13</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">primes</span><span class="p">)</span>
+<span class="n">primes</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">primes</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>[2, 3, 5, 7, 13]
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">try</span><span class="p">:</span>
+    <span class="n">primes</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">11</span>
+<span class="k">except</span> <span class="ne">TypeError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>&#39;tuple&#39; object does not support item assignment
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div></section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Use-TAB-to-see-if-there-is-any-mutable-method-for-tuple">Use TAB to see if there is any mutable method for tuple<a class="anchor-link" href="#Use-TAB-to-see-if-there-is-any-mutable-method-for-tuple">&#182;</a></h2><div class="highlight"><pre><span></span><span class="n">primes</span><span class="o">.&lt;</span><span class="n">TAB</span><span class="o">&gt;</span>
+</pre></div>
 
 </div>
 </div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="str-type-takes-+-and-*"><code>str</code> type takes <code>+</code> and <code>*</code><a class="anchor-link" href="#str-type-takes-+-and-*">&#182;</a></h2><ul>
-<li><code>+</code> for concatenation.</li>
-<li><code>*</code> for repetition.</li>
-</ul>
-
+<h2 id="Tuples-are-often-used-in-a-Python-program;-like-functions-that-have-multiple-return-values">Tuples are often used in a Python program; like functions that have multiple return values<a class="anchor-link" href="#Tuples-are-often-used-in-a-Python-program;-like-functions-that-have-multiple-return-values">&#182;</a></h2>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
@@ -14836,10 +14896,11 @@ from_fahrenheit_to_celsius(x)
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">mcd</span> <span class="o">=</span> <span class="s2">&quot;I&#39;m lovin&#39; it!&quot;</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">mcd</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">mcd</span> <span class="o">+</span> <span class="n">mcd</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">mcd</span> <span class="o">*</span> <span class="mi">3</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_locale</span><span class="p">(</span><span class="n">country</span><span class="p">,</span> <span class="n">city</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">country</span><span class="p">,</span> <span class="n">city</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">get_locale</span><span class="p">(</span><span class="s2">&quot;Taiwan&quot;</span><span class="p">,</span> <span class="s2">&quot;Taipei&quot;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">get_locale</span><span class="p">(</span><span class="s2">&quot;Taiwan&quot;</span><span class="p">,</span> <span class="s2">&quot;Taipei&quot;</span><span class="p">)))</span>
 </pre></div>
 
      </div>
@@ -14859,9 +14920,8 @@ from_fahrenheit_to_celsius(x)
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>I&#39;m lovin&#39; it!
-I&#39;m lovin&#39; it!I&#39;m lovin&#39; it!
-I&#39;m lovin&#39; it!I&#39;m lovin&#39; it!I&#39;m lovin&#39; it!
+<pre>(&#39;Taiwan&#39;, &#39;Taipei&#39;)
+&lt;class &#39;tuple&#39;&gt;
 </pre>
 </div>
 </div>
@@ -14873,16 +14933,7 @@ I&#39;m lovin&#39; it!I&#39;m lovin&#39; it!I&#39;m lovin&#39; it!
 </div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Format-our-str-printouts">Format our <code>str</code> printouts<a class="anchor-link" href="#Format-our-str-printouts">&#182;</a></h2><ul>
-<li>The <code>.format()</code> way.</li>
-<li>The <code>f-string</code> way.</li>
-</ul>
-
-</div>
-</div></section><section>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="The-.format()-way:-uses-{}-for-string-print-with-format">The <code>.format()</code> way: uses <code>{}</code> for string print with format<a class="anchor-link" href="#The-.format()-way:-uses-{}-for-string-print-with-format">&#182;</a></h2>
+<h2 id="Multiple-return-values-can-also-be-individually-assigned">Multiple return values can also be individually assigned<a class="anchor-link" href="#Multiple-return-values-can-also-be-individually-assigned">&#182;</a></h2>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
@@ -14890,12 +14941,9 @@ I&#39;m lovin&#39; it!I&#39;m lovin&#39; it!I&#39;m lovin&#39; it!
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">hello_anyone</span><span class="p">(</span><span class="n">anyone</span><span class="p">):</span>
-    <span class="n">out</span> <span class="o">=</span> <span class="s2">&quot;Hello, </span><span class="si">{}</span><span class="s2">!&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">anyone</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">out</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">hello_anyone</span><span class="p">(</span><span class="s2">&quot;Anakin Skywalker&quot;</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">hello_anyone</span><span class="p">(</span><span class="s2">&quot;Luke Skywalker&quot;</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">my_country</span><span class="p">,</span> <span class="n">my_city</span> <span class="o">=</span> <span class="n">get_locale</span><span class="p">(</span><span class="s2">&quot;Taiwan&quot;</span><span class="p">,</span> <span class="s2">&quot;Taipei&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">my_country</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">my_city</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14915,8 +14963,8 @@ I&#39;m lovin&#39; it!I&#39;m lovin&#39; it!I&#39;m lovin&#39; it!
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Hello, Anakin Skywalker!
-Hello, Luke Skywalker!
+<pre>Taiwan
+Taipei
 </pre>
 </div>
 </div>
@@ -14925,23 +14973,36 @@ Hello, Luke Skywalker!
 
 </div>
 
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Built-in-Data-Structure:-dict">Built-in Data Structure: <code>dict</code><a class="anchor-link" href="#Built-in-Data-Structure:-dict">&#182;</a></h2>
+</div>
 </div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="The-f-string-way:-uses-{}-for-string-print-with-format">The <code>f-string</code> way: uses <code>{}</code> for string print with format<a class="anchor-link" href="#The-f-string-way:-uses-{}-for-string-print-with-format">&#182;</a></h2>
+<h2 id="Dictionaries">Dictionaries<a class="anchor-link" href="#Dictionaries">&#182;</a></h2><p>Dictionaries are extremely flexible mappings of keys to values, and form the basis of much of Python's internal implementation. They can be created via a comma-separated list of <code>key:value</code> pairs within curly braces.</p>
+
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">hello_anyone</span><span class="p">(</span><span class="n">anyone</span><span class="p">):</span>
-    <span class="n">out</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;Hello, </span><span class="si">{</span><span class="n">anyone</span><span class="si">}</span><span class="s2">!&quot;</span>
-    <span class="k">return</span> <span class="n">out</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">boston_celtics</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;isNBAFranchise&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="s1">&#39;city&#39;</span><span class="p">:</span> <span class="s2">&quot;Boston&quot;</span><span class="p">,</span>
+    <span class="s1">&#39;fullName&#39;</span><span class="p">:</span> <span class="s2">&quot;Boston Celtics&quot;</span><span class="p">,</span>
+    <span class="s1">&#39;tricode&#39;</span><span class="p">:</span> <span class="s2">&quot;BOS&quot;</span><span class="p">,</span>
+    <span class="s1">&#39;teamId&#39;</span><span class="p">:</span> <span class="mi">1610612738</span><span class="p">,</span>
+    <span class="s1">&#39;nickname&#39;</span><span class="p">:</span> <span class="s2">&quot;Celtics&quot;</span><span class="p">,</span>
+    <span class="s1">&#39;confName&#39;</span><span class="p">:</span> <span class="s2">&quot;East&quot;</span><span class="p">,</span>
+    <span class="s1">&#39;divName&#39;</span><span class="p">:</span> <span class="s2">&quot;Atlantic&quot;</span>
+<span class="p">}</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">hello_anyone</span><span class="p">(</span><span class="s2">&quot;Anakin Skywalker&quot;</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">hello_anyone</span><span class="p">(</span><span class="s2">&quot;Luke Skywalker&quot;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">boston_celtics</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">boston_celtics</span><span class="p">))</span>
 </pre></div>
 
      </div>
@@ -14961,8 +15022,8 @@ Hello, Luke Skywalker!
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Hello, Anakin Skywalker!
-Hello, Luke Skywalker!
+<pre>&lt;class &#39;dict&#39;&gt;
+8
 </pre>
 </div>
 </div>
@@ -14974,23 +15035,17 @@ Hello, Luke Skywalker!
 </div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Commonly-used-format">Commonly used format<a class="anchor-link" href="#Commonly-used-format">&#182;</a></h2><ul>
-<li><code>{:.nf}</code> for float format.</li>
-<li><code>{:,}</code> for comma format.</li>
-</ul>
-
+<h2 id="Elements-are-accessed-through-valid-key-rather-than-zero-based-order">Elements are accessed through valid key rather than zero-based order<a class="anchor-link" href="#Elements-are-accessed-through-valid-key-rather-than-zero-based-order">&#182;</a></h2>
 </div>
-</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">format_pi</span><span class="p">(</span><span class="n">pi</span><span class="p">):</span>
-    <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">pi</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">format_pi</span><span class="p">(</span><span class="mf">3.1415</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">format_pi</span><span class="p">(</span><span class="mf">3.141592</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">boston_celtics</span><span class="p">[</span><span class="s1">&#39;city&#39;</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">boston_celtics</span><span class="p">[</span><span class="s1">&#39;confName&#39;</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">boston_celtics</span><span class="p">[</span><span class="s1">&#39;divName&#39;</span><span class="p">])</span>
 </pre></div>
 
      </div>
@@ -15010,8 +15065,9 @@ Hello, Luke Skywalker!
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>3.14
-3.14
+<pre>Boston
+East
+Atlantic
 </pre>
 </div>
 </div>
@@ -15020,18 +15076,19 @@ Hello, Luke Skywalker!
 
 </div>
 
-</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div></section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="New-key:value-pair-can-be-set-smoothly">New key:value pair can be set smoothly<a class="anchor-link" href="#New-key:value-pair-can-be-set-smoothly">&#182;</a></h2>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">format_krw</span><span class="p">(</span><span class="n">ntd</span><span class="p">):</span>
-    <span class="n">krw</span> <span class="o">=</span> <span class="n">ntd</span> <span class="o">*</span> <span class="mf">42.67</span>
-    <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">ntd</span><span class="si">:</span><span class="s2">,</span><span class="si">}</span><span class="s2"> NTD to </span><span class="si">{</span><span class="n">krw</span><span class="si">:</span><span class="s2">,.0f</span><span class="si">}</span><span class="s2"> KRW.&quot;</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">format_krw</span><span class="p">(</span><span class="mi">1000</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">format_krw</span><span class="p">(</span><span class="mi">5000</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">boston_celtics</span><span class="p">[</span><span class="s1">&#39;isMyFavorite&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">boston_celtics</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -15051,8 +15108,7 @@ Hello, Luke Skywalker!
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>1,000 NTD to 42,670 KRW.
-5,000 NTD to 213,350 KRW.
+<pre>{&#39;isNBAFranchise&#39;: True, &#39;city&#39;: &#39;Boston&#39;, &#39;fullName&#39;: &#39;Boston Celtics&#39;, &#39;tricode&#39;: &#39;BOS&#39;, &#39;teamId&#39;: 1610612738, &#39;nickname&#39;: &#39;Celtics&#39;, &#39;confName&#39;: &#39;East&#39;, &#39;divName&#39;: &#39;Atlantic&#39;, &#39;isMyFavorite&#39;: True}
 </pre>
 </div>
 </div>
@@ -15064,17 +15120,7 @@ Hello, Luke Skywalker!
 </div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="How-to-form-a-bool?">How to form a <code>bool</code>?<a class="anchor-link" href="#How-to-form-a-bool?">&#182;</a></h2><ul>
-<li>Use keywords <code>True</code> and <code>False</code> directly.</li>
-<li>Use relational operators.</li>
-<li>Use logical operators.</li>
-</ul>
-
-</div>
-</div></section><section>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Use-keywords-True-and-False-directly">Use keywords <code>True</code> and <code>False</code> directly<a class="anchor-link" href="#Use-keywords-True-and-False-directly">&#182;</a></h2>
+<h2 id="Use-del-to-remove-a-key:value-pair-from-a-dictionary">Use <code>del</code> to remove a key:value pair from a dictionary<a class="anchor-link" href="#Use-del-to-remove-a-key:value-pair-from-a-dictionary">&#182;</a></h2>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
@@ -15082,10 +15128,8 @@ Hello, Luke Skywalker!
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="kc">True</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="kc">False</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">del</span> <span class="n">boston_celtics</span><span class="p">[</span><span class="s1">&#39;isMyFavorite&#39;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">boston_celtics</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -15105,10 +15149,7 @@ Hello, Luke Skywalker!
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>True
-&lt;class &#39;bool&#39;&gt;
-False
-&lt;class &#39;bool&#39;&gt;
+<pre>{&#39;isNBAFranchise&#39;: True, &#39;city&#39;: &#39;Boston&#39;, &#39;fullName&#39;: &#39;Boston Celtics&#39;, &#39;tricode&#39;: &#39;BOS&#39;, &#39;teamId&#39;: 1610612738, &#39;nickname&#39;: &#39;Celtics&#39;, &#39;confName&#39;: &#39;East&#39;, &#39;divName&#39;: &#39;Atlantic&#39;}
 </pre>
 </div>
 </div>
@@ -15120,73 +15161,22 @@ False
 </div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Use-relational-operators">Use relational operators<a class="anchor-link" href="#Use-relational-operators">&#182;</a></h2><p>We have <code>==</code>, <code>!=</code>, <code>&gt;</code>, <code>&lt;</code>, <code>&gt;=</code>, <code>&lt;=</code>, <code>in</code>, <code>not in</code> as common relational operators to compare values.</p>
-
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mi">5566</span> <span class="o">==</span> <span class="mf">5566.0</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="mi">5566</span> <span class="o">!=</span> <span class="mf">5566.0</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;56&#39;</span> <span class="ow">in</span> <span class="s1">&#39;5566&#39;</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>True
-False
-True
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div></section><section>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Use-logical-operators">Use logical operators<a class="anchor-link" href="#Use-logical-operators">&#182;</a></h2><ul>
-<li>We have <code>and</code>, <code>or</code>, <code>not</code> as common logical operators to manipulate <code>bool</code> type values.</li>
-<li>Getting a <code>True</code> only if both sides of <code>and</code> are <code>True</code>.</li>
-<li>Getting a <code>False</code> only if both sides of <code>or</code> are <code>False</code>.</li>
+<h2 id="Common-mehtods-called-on-dictionaries">Common mehtods called on dictionaries<a class="anchor-link" href="#Common-mehtods-called-on-dictionaries">&#182;</a></h2><ul>
+<li><code>.keys()</code></li>
+<li><code>.values()</code></li>
+<li><code>.items()</code></li>
 </ul>
 
 </div>
 </div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="kc">True</span> <span class="ow">and</span> <span class="kc">True</span><span class="p">)</span>  <span class="c1"># get True only when both sides are True</span>
-<span class="nb">print</span><span class="p">(</span><span class="kc">True</span> <span class="ow">and</span> <span class="kc">False</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="kc">False</span> <span class="ow">and</span> <span class="kc">False</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="kc">True</span> <span class="ow">or</span> <span class="kc">True</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="kc">True</span> <span class="ow">or</span> <span class="kc">False</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="kc">False</span> <span class="ow">or</span> <span class="kc">False</span><span class="p">)</span> <span class="c1"># get a False only when both sides are False</span>
-<span class="c1"># use of not is quite straight-forward</span>
-<span class="nb">print</span><span class="p">(</span><span class="ow">not</span> <span class="kc">True</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="ow">not</span> <span class="kc">False</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">boston_celtics</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">boston_celtics</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">boston_celtics</span><span class="o">.</span><span class="n">items</span><span class="p">())</span>
 </pre></div>
 
      </div>
@@ -15206,14 +15196,59 @@ True
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>True
-False
-False
-True
-True
-False
-False
-True
+<pre>dict_keys([&#39;isNBAFranchise&#39;, &#39;city&#39;, &#39;fullName&#39;, &#39;tricode&#39;, &#39;teamId&#39;, &#39;nickname&#39;, &#39;confName&#39;, &#39;divName&#39;])
+dict_values([True, &#39;Boston&#39;, &#39;Boston Celtics&#39;, &#39;BOS&#39;, 1610612738, &#39;Celtics&#39;, &#39;East&#39;, &#39;Atlantic&#39;])
+dict_items([(&#39;isNBAFranchise&#39;, True), (&#39;city&#39;, &#39;Boston&#39;), (&#39;fullName&#39;, &#39;Boston Celtics&#39;), (&#39;tricode&#39;, &#39;BOS&#39;), (&#39;teamId&#39;, 1610612738), (&#39;nickname&#39;, &#39;Celtics&#39;), (&#39;confName&#39;, &#39;East&#39;), (&#39;divName&#39;, &#39;Atlantic&#39;)])
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Built-in-Data-Structure:-set">Built-in Data Structure: <code>set</code><a class="anchor-link" href="#Built-in-Data-Structure:-set">&#182;</a></h2>
+</div>
+</div></section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Sets">Sets<a class="anchor-link" href="#Sets">&#182;</a></h2><p>The fourth basic collection is the set, which contains unordered collections of unique items. They are defined much like lists and tuples, except they use the curly brackets.</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">primes</span> <span class="o">=</span> <span class="p">{</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">11</span><span class="p">}</span>
+<span class="n">odds</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">9</span><span class="p">}</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">primes</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">odds</span><span class="p">))</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>&lt;class &#39;set&#39;&gt;
+5
 </pre>
 </div>
 </div>
@@ -15225,8 +15260,12 @@ True
 </div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="An-example-of-using-logical-operators">An example of using logical operators<a class="anchor-link" href="#An-example-of-using-logical-operators">&#182;</a></h2><p>Good marathon weather is often described as dry <strong>and</strong> cold. Say, the probabilities of dry and cold on race day are both 50%, there is a 25% of chance for good marathon weather.</p>
-
+<h2 id="Python's-sets-have-all-of-the-operations-like-union,-intersection,-difference,-and-symmetric-difference">Python's sets have all of the operations like union, intersection, difference, and symmetric difference<a class="anchor-link" href="#Python's-sets-have-all-of-the-operations-like-union,-intersection,-difference,-and-symmetric-difference">&#182;</a></h2>
+</div>
+</div></section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Union:-elements-appearing-in-either-sets">Union: elements appearing in either sets<a class="anchor-link" href="#Union:-elements-appearing-in-either-sets">&#182;</a></h2>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
@@ -15234,13 +15273,8 @@ True
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">is_good_marathon_weather</span><span class="p">(</span><span class="n">is_dry</span><span class="p">,</span> <span class="n">is_cold</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">is_dry</span> <span class="ow">and</span> <span class="n">is_cold</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">is_good_marathon_weather</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="kc">True</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">is_good_marathon_weather</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">is_good_marathon_weather</span><span class="p">(</span><span class="kc">False</span><span class="p">,</span> <span class="kc">True</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">is_good_marathon_weather</span><span class="p">(</span><span class="kc">False</span><span class="p">,</span> <span class="kc">False</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">primes</span> <span class="o">|</span> <span class="n">odds</span><span class="p">)</span>      <span class="c1"># with an operator</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">primes</span><span class="o">.</span><span class="n">union</span><span class="p">(</span><span class="n">odds</span><span class="p">))</span> <span class="c1"># equivalently with a method</span>
 </pre></div>
 
      </div>
@@ -15260,10 +15294,8 @@ True
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>True
-False
-False
-False
+<pre>{1, 2, 3, 5, 7, 9, 11}
+{1, 2, 3, 5, 7, 9, 11}
 </pre>
 </div>
 </div>
@@ -15275,8 +15307,7 @@ False
 </div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="An-example-of-using-logical-operators(cont'd)">An example of using logical operators(cont'd)<a class="anchor-link" href="#An-example-of-using-logical-operators(cont'd)">&#182;</a></h2><p>Good marathon weather is often described as dry <strong>or</strong> cold. Say, the probabilities of dry and cold on race day are both 50%, there is a 75% of chance for good marathon weather.</p>
-
+<h2 id="Intersection:-elements-appearing-in-both">Intersection: elements appearing in both<a class="anchor-link" href="#Intersection:-elements-appearing-in-both">&#182;</a></h2>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
@@ -15284,13 +15315,8 @@ False
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">is_good_marathon_weather</span><span class="p">(</span><span class="n">is_dry</span><span class="p">,</span> <span class="n">is_cold</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">is_dry</span> <span class="ow">or</span> <span class="n">is_cold</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">is_good_marathon_weather</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="kc">True</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">is_good_marathon_weather</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">is_good_marathon_weather</span><span class="p">(</span><span class="kc">False</span><span class="p">,</span> <span class="kc">True</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">is_good_marathon_weather</span><span class="p">(</span><span class="kc">False</span><span class="p">,</span> <span class="kc">False</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">primes</span> <span class="o">&amp;</span> <span class="n">odds</span><span class="p">)</span>             <span class="c1"># with an operator</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">primes</span><span class="o">.</span><span class="n">intersection</span><span class="p">(</span><span class="n">odds</span><span class="p">))</span> <span class="c1"># equivalently with a method</span>
 </pre></div>
 
      </div>
@@ -15310,10 +15336,8 @@ False
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>True
-True
-True
-False
+<pre>{3, 5, 7}
+{3, 5, 7}
 </pre>
 </div>
 </div>
@@ -15325,29 +15349,16 @@ False
 </div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="bool-is-quite-useful-in-control-flow-and-filtering-data."><code>bool</code> is quite useful in control flow and filtering data.<a class="anchor-link" href="#bool-is-quite-useful-in-control-flow-and-filtering-data.">&#182;</a></h2>
+<h2 id="Difference:-elements-in-primes-but-not-in-odds">Difference: elements in primes but not in odds<a class="anchor-link" href="#Difference:-elements-in-primes-but-not-in-odds">&#182;</a></h2>
 </div>
-</div></section><section>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Python-has-a-special-type,-the-NoneType,-with-a-single-value,-None">Python has a special type, the <code>NoneType</code>, with a single value, None<a class="anchor-link" href="#Python-has-a-special-type,-the-NoneType,-with-a-single-value,-None">&#182;</a></h2><ul>
-<li>This is used to represent undefined values.</li>
-<li>It is not the same as <code>False</code>, or an empty string <code>''</code> or 0.</li>
-</ul>
-
-</div>
-</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a_none_type</span> <span class="o">=</span> <span class="kc">None</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">a_none_type</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a_none_type</span> <span class="o">==</span> <span class="kc">False</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a_none_type</span> <span class="o">==</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a_none_type</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a_none_type</span> <span class="o">==</span> <span class="kc">None</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">primes</span> <span class="o">-</span> <span class="n">odds</span><span class="p">)</span>           <span class="c1"># with an operator</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">primes</span><span class="o">.</span><span class="n">difference</span><span class="p">(</span><span class="n">odds</span><span class="p">))</span> <span class="c1"># equivalently with a method</span>
 </pre></div>
 
      </div>
@@ -15367,11 +15378,8 @@ False
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>&lt;class &#39;NoneType&#39;&gt;
-False
-False
-False
-True
+<pre>{2, 11}
+{2, 11}
 </pre>
 </div>
 </div>
@@ -15383,7 +15391,7 @@ True
 </div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="A-function-without-return-statement-actually-returns-a-NoneType.">A function without <code>return</code> statement actually returns a <code>NoneType</code>.<a class="anchor-link" href="#A-function-without-return-statement-actually-returns-a-NoneType.">&#182;</a></h2>
+<h2 id="Symmetric-difference:-items-appearing-in-only-one-set">Symmetric difference: items appearing in only one set<a class="anchor-link" href="#Symmetric-difference:-items-appearing-in-only-one-set">&#182;</a></h2>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
@@ -15391,11 +15399,9 @@ True
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">hello_anyone</span><span class="p">(</span><span class="n">anyone</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Hello, </span><span class="si">{</span><span class="n">anyone</span><span class="si">}</span><span class="s2">!&quot;</span><span class="p">)</span>
-
-<span class="n">hello_anyone</span><span class="p">(</span><span class="s2">&quot;Anakin Skywalker&quot;</span><span class="p">)</span>
-<span class="n">hello_anyone</span><span class="p">(</span><span class="s2">&quot;Luke Skywalker&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">sorted</span><span class="p">((</span><span class="n">primes</span> <span class="o">-</span> <span class="n">odds</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">odds</span> <span class="o">-</span> <span class="n">primes</span><span class="p">)))</span> <span class="c1"># union two differences</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">primes</span> <span class="o">^</span> <span class="n">odds</span><span class="p">)</span>                             <span class="c1"># with an operator</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">primes</span><span class="o">.</span><span class="n">symmetric_difference</span><span class="p">(</span><span class="n">odds</span><span class="p">))</span>         <span class="c1"># equivalently with a method</span>
 </pre></div>
 
      </div>
@@ -15415,112 +15421,9 @@ True
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Hello, Anakin Skywalker!
-Hello, Luke Skywalker!
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">func_out</span> <span class="o">=</span> <span class="n">hello_anyone</span><span class="p">(</span><span class="s2">&quot;Anakin Skywalker&quot;</span><span class="p">)</span>
-<span class="nb">type</span><span class="p">(</span><span class="n">func_out</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Hello, Anakin Skywalker!
-</pre>
-</div>
-</div>
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[22]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>NoneType</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div></section><section>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Besides-type()-function,-data-types-can-also-be-validated-via-isinstance()-function">Besides <code>type()</code> function, data types can also be validated via <code>isinstance()</code> function<a class="anchor-link" href="#Besides-type()-function,-data-types-can-also-be-validated-via-isinstance()-function">&#182;</a></h2>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">an_integer</span> <span class="o">=</span> <span class="mi">5566</span>
-<span class="n">a_float</span> <span class="o">=</span> <span class="mf">42.195</span>
-<span class="n">a_str</span> <span class="o">=</span> <span class="s2">&quot;5566&quot;</span>
-<span class="n">a_bool</span> <span class="o">=</span> <span class="kc">False</span>
-<span class="n">a_none_type</span> <span class="o">=</span> <span class="kc">None</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">an_integer</span><span class="p">,</span> <span class="nb">int</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">a_float</span><span class="p">,</span> <span class="nb">float</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">a_str</span><span class="p">,</span> <span class="nb">str</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">a_bool</span><span class="p">,</span> <span class="nb">bool</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">a_none_type</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="kc">None</span><span class="p">)))</span> <span class="c1"># print(a_none_type == None)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>True
-True
-True
-True
-True
+<pre>[1, 2, 9, 11]
+{1, 2, 9, 11}
+{1, 2, 9, 11}
 </pre>
 </div>
 </div>
@@ -15532,107 +15435,15 @@ True
 </div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Data-types-can-be-dynamically-converted-using-functions">Data types can be dynamically converted using functions<a class="anchor-link" href="#Data-types-can-be-dynamically-converted-using-functions">&#182;</a></h2><ul>
-<li><code>int()</code> for converting to <code>int</code>.</li>
-<li><code>float()</code> for converting to <code>float</code>.</li>
-<li><code>str()</code> for converting to <code>str</code>.</li>
-<li><code>bool()</code> for converting to <code>bool</code>.</li>
-</ul>
-
+<h2 id="One-of-the-powerful-features-of-Python's-compound-objects-is-that-they-can-contain-objects-of-any-type,-or-even-a-mix-of-types">One of the powerful features of Python's compound objects is that they can contain objects of any type, or even a mix of types<a class="anchor-link" href="#One-of-the-powerful-features-of-Python's-compound-objects-is-that-they-can-contain-objects-of-any-type,-or-even-a-mix-of-types">&#182;</a></h2>
 </div>
 </div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Upcasting(to-a-supertype)-is-always-allowed">Upcasting(to a supertype) is always allowed<a class="anchor-link" href="#Upcasting(to-a-supertype)-is-always-allowed">&#182;</a></h2><p><code>NoneType</code> -&gt; <code>bool</code> -&gt; <code>int</code> -&gt; <code>float</code> -&gt; <code>str</code>.</p>
+<h2 id="Take-data.nba.net-for-example">Take data.nba.net for example<a class="anchor-link" href="#Take-data.nba.net-for-example">&#182;</a></h2><p>The official API of NBA is a bunch of compound dictionaries contained other dictionaries/lists as values.</p>
+<p>Source: <a href="https://data.nba.net/10s/prod/v1/today.json">https://data.nba.net/10s/prod/v1/today.json</a></p>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[24]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">bool</span><span class="p">(</span><span class="kc">None</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="kc">True</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="mf">1.0</span><span class="p">))</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>False
-1
-1.0
-1.0
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div></section><section>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="While-downcasting(to-a-subtype)-needs-a-second-look">While downcasting(to a subtype) needs a second look<a class="anchor-link" href="#While-downcasting(to-a-subtype)-needs-a-second-look">&#182;</a></h2>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[25]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="s1">&#39;1.0&#39;</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="s1">&#39;1&#39;</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">bool</span><span class="p">(</span><span class="s1">&#39;False&#39;</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">bool</span><span class="p">(</span><span class="s1">&#39;NoneType&#39;</span><span class="p">))</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>1.0
-1
-True
-True
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
 </div></section></section>
 </div>
 </div>
