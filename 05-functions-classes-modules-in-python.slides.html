@@ -14807,7 +14807,7 @@ div.jp-OutputPrompt {
 </div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="When-it-comes-to-defining-functions,-it-is-vital-to-understand-the-scope-of-a-variable">When it comes to defining functions, it is vital to understand the scope of a variable<a class="anchor-link" href="#When-it-comes-to-defining-functions,-it-is-vital-to-understand-the-scope-of-a-variable">&#182;</a></h2>
+<h2 id="When-it-comes-to-defining-functions,-it-is-vital-to-understand-the-scope-of-an-object">When it comes to defining functions, it is vital to understand the scope of an object<a class="anchor-link" href="#When-it-comes-to-defining-functions,-it-is-vital-to-understand-the-scope-of-an-object">&#182;</a></h2>
 </div>
 </div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
@@ -14971,7 +14971,7 @@ name &#39;x&#39; is not defined
 </div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Although-global-variable-looks-quite-convenient,-it-is-HIGHLY-recommended-NOT-using-global-variable-directly-in-a-indented-function-block.">Although global variable looks quite convenient, it is HIGHLY recommended NOT using global variable directly in a indented function block.<a class="anchor-link" href="#Although-global-variable-looks-quite-convenient,-it-is-HIGHLY-recommended-NOT-using-global-variable-directly-in-a-indented-function-block.">&#182;</a></h2>
+<h2 id="Although-global-object-looks-quite-convenient,-it-is-HIGHLY-recommended-NOT-using-global-object-directly-in-a-indented-function-block.">Although global object looks quite convenient, it is HIGHLY recommended NOT using global object directly in a indented function block.<a class="anchor-link" href="#Although-global-object-looks-quite-convenient,-it-is-HIGHLY-recommended-NOT-using-global-object-directly-in-a-indented-function-block.">&#182;</a></h2>
 </div>
 </div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
@@ -15031,7 +15031,7 @@ name &#39;x&#39; is not defined
 </div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="The-principle-of-designing-of-a-function-is-about-mapping-the-relationship-of-inputs-and-outputs">The principle of designing of a function is about mapping the relationship of inputs and outputs<a class="anchor-link" href="#The-principle-of-designing-of-a-function-is-about-mapping-the-relationship-of-inputs-and-outputs">&#182;</a></h2><ul>
+<h2 id="The-principle-of-designing-of-a-function-is-about-mapping-the-relationship-between-inputs-and-outputs">The principle of designing of a function is about mapping the relationship between inputs and outputs<a class="anchor-link" href="#The-principle-of-designing-of-a-function-is-about-mapping-the-relationship-between-inputs-and-outputs">&#182;</a></h2><ul>
 <li>The one-on-one relationship</li>
 <li>The many-on-one relationship</li>
 <li>The one-on-many relationship</li>
@@ -15497,6 +15497,43 @@ absolute(x)
 
 </div>
 
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># the object favorite_tv_character is an instance of str class</span>
+<span class="n">favorite_tv_character</span> <span class="o">=</span> <span class="s2">&quot;Phoebe Buffay&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">favorite_tv_character</span><span class="p">))</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>&lt;class &#39;str&#39;&gt;
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
 </div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
@@ -15506,7 +15543,7 @@ absolute(x)
 </div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="The-relationship-between-object-and-class">The relationship between object and class<a class="anchor-link" href="#The-relationship-between-object-and-class">&#182;</a></h2><ul>
+<h2 id="The-relationship-between-objects-and-classes">The relationship between objects and classes<a class="anchor-link" href="#The-relationship-between-objects-and-classes">&#182;</a></h2><ul>
 <li>A class is like a blueprint designed by its creators.</li>
 <li>An object is like the final product build by its users based on its blueprint.</li>
 </ul>
@@ -15516,8 +15553,8 @@ absolute(x)
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Why-implementing-a-class-by-ourselves?">Why implementing a class by ourselves?<a class="anchor-link" href="#Why-implementing-a-class-by-ourselves?">&#182;</a></h2><ul>
-<li>We define our own functions if there is no appropriate built-in functions or library-powered functions</li>
-<li>We implement our own classes if there is no appropriate built-in classes or library-powered classes</li>
+<li>We define our own functions if there is no appropriate built-in functions or module-powered functions</li>
+<li>We implement our own classes if there is no appropriate built-in classes or module-powered classes</li>
 </ul>
 
 </div>
@@ -16136,7 +16173,7 @@ True
 </div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Navigate-files-using-Terminal-in-our-environment">Navigate files using Terminal in our environment<a class="anchor-link" href="#Navigate-files-using-Terminal-in-our-environment">&#182;</a></h2><ul>
+<h2 id="Navigate-files-using-Terminal-in-our-environment">Navigate files using Terminal in <a href="https://mybinder.org/v2/gh/datainpoint/classroom-programming-and-data-analysis/HEAD">our environment</a><a class="anchor-link" href="#Navigate-files-using-Terminal-in-our-environment">&#182;</a></h2><ul>
 <li>Go to Jupyter homepage.</li>
 <li>New -&gt; Terminal.</li>
 </ul>
