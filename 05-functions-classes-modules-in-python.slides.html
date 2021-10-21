@@ -14571,7 +14571,7 @@ div.jp-OutputPrompt {
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>10</pre>
+<pre>4</pre>
 </div>
 
 </div>
@@ -14615,7 +14615,7 @@ div.jp-OutputPrompt {
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>array([4, 7, 1, 7, 8])</pre>
+<pre>array([9, 8, 4, 7, 6])</pre>
 </div>
 
 </div>
@@ -15291,7 +15291,7 @@ absolute(x)
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="n">kwargs</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">plain_return</span><span class="p">(</span><span class="n">TW</span><span class="o">=</span><span class="s1">&#39;Taiwan&#39;</span><span class="p">,</span> <span class="n">JP</span><span class="o">=</span><span class="s1">&#39;Japan&#39;</span><span class="p">,</span> <span class="n">CN</span><span class="o">=</span><span class="s1">&#39;China&#39;</span><span class="p">,</span> <span class="n">KR</span><span class="o">=</span><span class="s1">&#39;South Korea&#39;</span><span class="p">))</span>
+<span class="n">plain_return</span><span class="p">(</span><span class="n">district</span><span class="o">=</span><span class="s1">&#39;Da-an&#39;</span><span class="p">,</span> <span class="n">city</span><span class="o">=</span><span class="s1">&#39;Taipei&#39;</span><span class="p">,</span> <span class="n">country</span><span class="o">=</span><span class="s1">&#39;Taiwan&#39;</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -15307,13 +15307,15 @@ absolute(x)
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[17]:</div>
 
 
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>{&#39;TW&#39;: &#39;Taiwan&#39;, &#39;JP&#39;: &#39;Japan&#39;, &#39;CN&#39;: &#39;China&#39;, &#39;KR&#39;: &#39;South Korea&#39;}
-</pre>
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>{&#39;district&#39;: &#39;Da-an&#39;, &#39;city&#39;: &#39;Taipei&#39;, &#39;country&#39;: &#39;Taiwan&#39;}</pre>
 </div>
+
 </div>
 
 </div>
@@ -15340,14 +15342,10 @@ absolute(x)
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_locale</span><span class="p">(</span><span class="n">city</span><span class="p">,</span> <span class="n">country</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Return user&#39;s locale.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">return</span> <span class="n">city</span><span class="p">,</span> <span class="n">country</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">return_different_case_formats</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">x</span><span class="o">.</span><span class="n">lower</span><span class="p">(),</span> <span class="n">x</span><span class="o">.</span><span class="n">upper</span><span class="p">(),</span> <span class="n">x</span><span class="o">.</span><span class="n">swapcase</span><span class="p">(),</span> <span class="n">x</span><span class="o">.</span><span class="n">title</span><span class="p">()</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">get_locale</span><span class="p">(</span><span class="s1">&#39;Taipei&#39;</span><span class="p">,</span> <span class="s1">&#39;Taiwan&#39;</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">get_locale</span><span class="p">(</span><span class="s1">&#39;Boston&#39;</span><span class="p">,</span> <span class="s1">&#39;United States&#39;</span><span class="p">))</span>
+<span class="n">return_different_case_formats</span><span class="p">(</span><span class="s2">&quot;Luke skywalker&quot;</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -15363,14 +15361,15 @@ absolute(x)
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[18]:</div>
 
 
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>(&#39;Taipei&#39;, &#39;Taiwan&#39;)
-(&#39;Boston&#39;, &#39;United States&#39;)
-</pre>
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>(&#39;luke skywalker&#39;, &#39;LUKE SKYWALKER&#39;, &#39;lUKE SKYWALKER&#39;, &#39;Luke Skywalker&#39;)</pre>
 </div>
+
 </div>
 
 </div>
@@ -15388,18 +15387,16 @@ absolute(x)
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_locale</span><span class="p">(</span><span class="n">city</span><span class="p">,</span> <span class="n">country</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Return user&#39;s locale.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">locale</span> <span class="o">=</span> <span class="p">{</span>
-        <span class="s1">&#39;cityName&#39;</span><span class="p">:</span> <span class="n">city</span><span class="p">,</span>
-        <span class="s1">&#39;countryName&#39;</span><span class="p">:</span> <span class="n">country</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">return_different_case_formats</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="n">out</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;lowerCased&quot;</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">lower</span><span class="p">(),</span>
+        <span class="s2">&quot;upperCased&quot;</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">upper</span><span class="p">(),</span>
+        <span class="s2">&quot;swapCased&quot;</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">swapcase</span><span class="p">(),</span>
+        <span class="s2">&quot;titleCased&quot;</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">title</span><span class="p">()</span>
     <span class="p">}</span>
-    <span class="k">return</span> <span class="n">locale</span>
+    <span class="k">return</span> <span class="n">out</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">get_locale</span><span class="p">(</span><span class="s1">&#39;Taipei&#39;</span><span class="p">,</span> <span class="s1">&#39;Taiwan&#39;</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">get_locale</span><span class="p">(</span><span class="s1">&#39;Boston&#39;</span><span class="p">,</span> <span class="s1">&#39;United States&#39;</span><span class="p">))</span>
+<span class="n">return_different_case_formats</span><span class="p">(</span><span class="s2">&quot;Luke skywalker&quot;</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -15415,14 +15412,18 @@ absolute(x)
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[19]:</div>
 
 
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>{&#39;cityName&#39;: &#39;Taipei&#39;, &#39;countryName&#39;: &#39;Taiwan&#39;}
-{&#39;cityName&#39;: &#39;Boston&#39;, &#39;countryName&#39;: &#39;United States&#39;}
-</pre>
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>{&#39;lowerCased&#39;: &#39;luke skywalker&#39;,
+ &#39;upperCased&#39;: &#39;LUKE SKYWALKER&#39;,
+ &#39;swapCased&#39;: &#39;lUKE SKYWALKER&#39;,
+ &#39;titleCased&#39;: &#39;Luke Skywalker&#39;}</pre>
 </div>
+
 </div>
 
 </div>
@@ -15532,6 +15533,13 @@ absolute(x)
 <li><code>NoneType</code></li>
 </ul>
 </li>
+</ul>
+
+</div>
+</div></section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="So-far,-we've-been-using-these-built-in-classes(Cont'd)">So far, we've been using these built-in classes(Cont'd)<a class="anchor-link" href="#So-far,-we've-been-using-these-built-in-classes(Cont'd)">&#182;</a></h2><ul>
 <li>Data Structures<ul>
 <li><code>list</code></li>
 <li><code>tuple</code></li>
@@ -15739,7 +15747,7 @@ absolute(x)
 <h2 id="We-not-only-bind-functions-to-a-class,-but-also-bind-data-to-a-class">We not only bind functions to a class, but also bind data to a class<a class="anchor-link" href="#We-not-only-bind-functions-to-a-class,-but-also-bind-data-to-a-class">&#182;</a></h2><p>Use the <code>__init__</code> methods to create attributes.</p>
 
 </div>
-</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[26]:</div>
@@ -15747,7 +15755,7 @@ absolute(x)
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">SimpleCalculator</span><span class="p">:</span>
     <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This class creates a simple calculator that is able to add, subtract, multiply, and divide 2 numbers.</span>
+<span class="sd">    This class creates a simple calculator that is able to add and subtract 2 numbers.</span>
 <span class="sd">    This class has an attribute of Euler&#39;s number: e.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
@@ -15756,10 +15764,8 @@ absolute(x)
         <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
     <span class="k">def</span> <span class="nf">subtract</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
         <span class="k">return</span> <span class="n">x</span> <span class="o">-</span> <span class="n">y</span>
-    <span class="k">def</span> <span class="nf">multiply</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
-        <span class="k">return</span> <span class="n">x</span> <span class="o">*</span> <span class="n">y</span>
-    <span class="k">def</span> <span class="nf">divide</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
-        <span class="k">return</span> <span class="n">x</span> <span class="o">/</span> <span class="n">y</span>
+    <span class="k">def</span> <span class="nf">exp</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">e</span><span class="o">**</span><span class="n">n</span>
 </pre></div>
 
      </div>
@@ -15774,7 +15780,8 @@ absolute(x)
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">sc</span> <span class="o">=</span> <span class="n">SimpleCalculator</span><span class="p">()</span>
-<span class="n">sc</span><span class="o">.</span><span class="n">e</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">sc</span><span class="o">.</span><span class="n">e</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">sc</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span>
 </pre></div>
 
      </div>
@@ -15790,15 +15797,14 @@ absolute(x)
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[27]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>2.71828182846</pre>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>2.71828182846
+7.38905609893584
+</pre>
 </div>
-
 </div>
 
 </div>
@@ -15836,7 +15842,7 @@ absolute(x)
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>&lt;__main__.SimpleCalculator object at 0x7fab9c38a760&gt;
+<pre>&lt;__main__.SimpleCalculator object at 0x7f89d3487af0&gt;
 </pre>
 </div>
 </div>
@@ -15857,6 +15863,10 @@ absolute(x)
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">SimpleCalculator</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This class creates a simple calculator that is able to add and subtract 2 numbers.</span>
+<span class="sd">    This class has an attribute of Euler&#39;s number: e.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">e</span> <span class="o">=</span> <span class="mf">2.71828182846</span>
     <span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
@@ -15865,10 +15875,8 @@ absolute(x)
         <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
     <span class="k">def</span> <span class="nf">subtract</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
         <span class="k">return</span> <span class="n">x</span> <span class="o">-</span> <span class="n">y</span>
-    <span class="k">def</span> <span class="nf">multiply</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
-        <span class="k">return</span> <span class="n">x</span> <span class="o">*</span> <span class="n">y</span>
-    <span class="k">def</span> <span class="nf">divide</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
-        <span class="k">return</span> <span class="n">x</span> <span class="o">/</span> <span class="n">y</span>
+    <span class="k">def</span> <span class="nf">exp</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">e</span><span class="o">**</span><span class="n">n</span>
 </pre></div>
 
      </div>
@@ -15876,7 +15884,7 @@ absolute(x)
 </div>
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[30]:</div>
@@ -15943,11 +15951,8 @@ absolute(x)
     <span class="k">pass</span>
 
 <span class="n">ic</span> <span class="o">=</span> <span class="n">IntermediateCalculator</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">ic</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s1">&#39;55&#39;</span><span class="p">,</span> <span class="s1">&#39;66&#39;</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">ic</span><span class="o">.</span><span class="n">subtract</span><span class="p">(</span><span class="mi">55</span><span class="p">,</span> <span class="mi">66</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">ic</span><span class="o">.</span><span class="n">multiply</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">ic</span><span class="o">.</span><span class="n">divide</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">ic</span><span class="o">.</span><span class="n">e</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;e&quot;</span> <span class="ow">in</span> <span class="nb">dir</span><span class="p">(</span><span class="n">ic</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;exp&quot;</span> <span class="ow">in</span> <span class="nb">dir</span><span class="p">(</span><span class="n">ic</span><span class="p">))</span>
 </pre></div>
 
      </div>
@@ -15967,11 +15972,8 @@ absolute(x)
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>5566
--11
-30
-0.8333333333333334
-2.71828182846
+<pre>True
+True
 </pre>
 </div>
 </div>
@@ -16000,14 +16002,16 @@ absolute(x)
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    This class inherits from simple calculator and add more methods to it.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">mutiply</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">x</span><span class="o">*</span><span class="n">y</span>
+    <span class="k">def</span> <span class="nf">divide</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">x</span> <span class="o">/</span> <span class="n">y</span>
     <span class="k">def</span> <span class="nf">power</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
         <span class="k">return</span> <span class="n">x</span><span class="o">**</span><span class="n">y</span>
     <span class="k">def</span> <span class="nf">mod</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
         <span class="k">return</span> <span class="n">x</span> <span class="o">%</span> <span class="n">y</span>
     <span class="k">def</span> <span class="nf">floor_divide</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
         <span class="k">return</span> <span class="n">x</span> <span class="o">//</span> <span class="n">y</span>
-    <span class="k">def</span> <span class="nf">exp</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">e</span><span class="o">**</span><span class="n">x</span>
 </pre></div>
 
      </div>
@@ -16179,19 +16183,19 @@ True
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># simple_calculator.py</span>
 <span class="k">class</span> <span class="nc">SimpleCalculator</span><span class="p">:</span>
     <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This class creates a simple calculator that is able to add, subtract, multiply, and divide 2 numbers.</span>
+<span class="sd">    This class creates a simple calculator that is able to add and subtract 2 numbers.</span>
 <span class="sd">    This class has an attribute of Euler&#39;s number: e.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">e</span> <span class="o">=</span> <span class="mf">2.71828182846</span>
+    <span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s2">&quot;A Simple Calculator Class.&quot;</span>
     <span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
         <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
     <span class="k">def</span> <span class="nf">subtract</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
         <span class="k">return</span> <span class="n">x</span> <span class="o">-</span> <span class="n">y</span>
-    <span class="k">def</span> <span class="nf">multiply</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
-        <span class="k">return</span> <span class="n">x</span> <span class="o">*</span> <span class="n">y</span>
-    <span class="k">def</span> <span class="nf">divide</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
-        <span class="k">return</span> <span class="n">x</span> <span class="o">/</span> <span class="n">y</span>
+    <span class="k">def</span> <span class="nf">exp</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">e</span><span class="o">**</span><span class="n">n</span>
 </pre></div>
 
      </div>
