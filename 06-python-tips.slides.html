@@ -14541,8 +14541,8 @@ div.jp-OutputPrompt {
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>[43, 59, 46, 14, 85, 92, 3, 44, 44, 27, 49, 34, 40, 48, 72, 80, 12, 77, 65, 43]
-[43, 59, 85, 3, 27, 49, 77, 65, 43]
+<pre>[37, 94, 13, 18, 58, 19, 44, 59, 9, 48, 98, 60, 76, 75, 90, 11, 85, 21, 24, 33]
+[37, 13, 19, 59, 9, 75, 11, 85, 21, 33]
 </pre>
 </div>
 </div>
@@ -14585,8 +14585,8 @@ div.jp-OutputPrompt {
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>[1, 27, 65, 92, 74, 54, 35, 55, 87, 64, 75, 4, 26, 97, 15, 14, 51, 36, 53, 57]
-[True, True, True, False, False, False, True, True, True, False, True, False, False, True, True, False, True, False, True, True]
+<pre>[33, 42, 53, 1, 66, 42, 48, 89, 97, 82, 11, 69, 80, 44, 88, 45, 60, 1, 52, 40]
+[True, False, True, True, False, False, False, True, True, False, True, True, False, False, False, True, False, True, False, False]
 </pre>
 </div>
 </div>
@@ -14736,7 +14736,7 @@ div.jp-OutputPrompt {
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>&lt;generator object &lt;genexpr&gt; at 0x7ffd5bc592e0&gt;
+<pre>&lt;generator object &lt;genexpr&gt; at 0x7fdbd2c2aac0&gt;
 &lt;class &#39;generator&#39;&gt;
 </pre>
 </div>
@@ -14795,7 +14795,7 @@ div.jp-OutputPrompt {
 </div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Iterators">Iterators<a class="anchor-link" href="#Iterators">&#182;</a></h2>
+<h2 id="Iterator-and-Functional-Functions">Iterator and Functional Functions<a class="anchor-link" href="#Iterator-and-Functional-Functions">&#182;</a></h2>
 </div>
 </div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
@@ -14809,20 +14809,17 @@ div.jp-OutputPrompt {
 </div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Useful-iterators-in-Python">Useful iterators in Python<a class="anchor-link" href="#Useful-iterators-in-Python">&#182;</a></h2><ul>
+<h2 id="Useful-built-in-iterator-functions-in-Python">Useful built-in iterator functions in Python<a class="anchor-link" href="#Useful-built-in-iterator-functions-in-Python">&#182;</a></h2><ul>
 <li><code>range()</code></li>
 <li><code>enumerate()</code></li>
 <li><code>zip()</code></li>
-<li><code>map()</code></li>
-<li><code>filter()</code></li>
-<li><code>reduce()</code></li>
 </ul>
 
 </div>
 </div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Except-for-range-the-other-four-are-all-generator-functions">Except for <code>range</code> the other four are all generator functions<a class="anchor-link" href="#Except-for-range-the-other-four-are-all-generator-functions">&#182;</a></h2>
+<h2 id="Except-for-range-the-other-two-are-all-generator-functions">Except for <code>range</code> the other two are all generator functions<a class="anchor-link" href="#Except-for-range-the-other-two-are-all-generator-functions">&#182;</a></h2>
 </div>
 </div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
@@ -14922,7 +14919,7 @@ class enumerate(object)
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>&lt;enumerate object at 0x7ffd5bc7b5c0&gt;
+<pre>&lt;enumerate object at 0x7fdbd2ca6380&gt;
 [(0, &#39;The Avengers&#39;), (1, &#39;Avengers: Age of Ultron&#39;), (2, &#39;Avengers: Infinity War&#39;), (3, &#39;Avengers: Endgame&#39;)]
 </pre>
 </div>
@@ -15028,7 +15025,7 @@ class zip(object)
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>&lt;zip object at 0x7ffd5bc7bc80&gt;
+<pre>&lt;zip object at 0x7fdbd2c7ee40&gt;
 [(2012, &#39;The Avengers&#39;), (2015, &#39;Avengers: Age of Ultron&#39;), (2018, &#39;Avengers: Infinity War&#39;), (2019, &#39;Avengers: Endgame&#39;)]
 </pre>
 </div>
@@ -15038,6 +15035,23 @@ class zip(object)
 
 </div>
 
+</div></section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Useful-functional-functions">Useful functional functions<a class="anchor-link" href="#Useful-functional-functions">&#182;</a></h2><ul>
+<li><code>map()</code></li>
+<li><code>filter()</code></li>
+</ul>
+
+</div>
+</div></section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="What-are-functional-functions?">What are functional functions?<a class="anchor-link" href="#What-are-functional-functions?">&#182;</a></h2><blockquote><p>Functional functions are functions constructed by applying and composing functions. One of the characteristics of functional functions are functions can be passed as arguments.</p>
+</blockquote>
+<p>Source: <a href="https://en.wikipedia.org/wiki/Functional_programming">https://en.wikipedia.org/wiki/Functional_programming</a></p>
+
+</div>
 </div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
@@ -15127,7 +15141,7 @@ class map(object)
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>&lt;map object at 0x7ffd5bca4070&gt;
+<pre>&lt;map object at 0x7fdbd2ca36d0&gt;
 [0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0]
 </pre>
 </div>
@@ -15228,9 +15242,9 @@ class filter(object)
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>[True, True, True, True, False, False, True, False, True, True, True, False, False, True, True, True, True, True, False, False]
-&lt;filter object at 0x7ffd5bcacf10&gt;
-[True, True, True, True, True, True, True, True, True, True, True, True, True]
+<pre>[False, True, False, True, False, True, True, False, True, True, False, True, False, True, True, True, True, False, True, False]
+&lt;filter object at 0x7fdbd2cadc70&gt;
+[True, True, True, True, True, True, True, True, True, True, True, True]
 </pre>
 </div>
 </div>
@@ -15350,7 +15364,7 @@ class filter(object)
 </div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Open-file-with-built-in-function-open(file_path,-&quot;r&quot;)">Open file with built-in function <code>open(file_path, "r")</code><a class="anchor-link" href="#Open-file-with-built-in-function-open(file_path,-&quot;r&quot;)">&#182;</a></h2><div class="highlight"><pre><span></span><span class="n">file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;file_name&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span>
+<h2 id="Open-file-with-built-in-function-open(file_path,-&quot;r&quot;)">Open file with built-in function <code>open(file_path, "r")</code><a class="anchor-link" href="#Open-file-with-built-in-function-open(file_path,-&quot;r&quot;)">&#182;</a></h2><div class="highlight"><pre><span></span><span class="n">file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span>
 <span class="c1"># ...</span>
 <span class="c1"># ...</span>
 <span class="n">file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
@@ -15360,7 +15374,7 @@ class filter(object)
 </div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Using-with-as-a-context-manager">Using <code>with</code> as a context manager<a class="anchor-link" href="#Using-with-as-a-context-manager">&#182;</a></h2><div class="highlight"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;file_name&#39;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
+<h2 id="Using-with-as-a-context-manager">Using <code>with</code> as a context manager<a class="anchor-link" href="#Using-with-as-a-context-manager">&#182;</a></h2><div class="highlight"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
     <span class="c1"># ...</span>
     <span class="c1"># ...</span>
 </pre></div>
@@ -16061,6 +16075,14 @@ Bank Merchant Andy Dufresne is convicted of the murder of his wife and her lover
 </div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Command-to-install-a-specific-module">Command to install a specific module<a class="anchor-link" href="#Command-to-install-a-specific-module">&#182;</a></h2><div class="highlight"><pre><span></span><span class="c1"># run in command line, do not run in jupyter notebooks.</span>
+<span class="o">(</span>base<span class="o">)</span> conda install jupyter <span class="c1"># or run pip install jupyter</span>
+</pre></div>
+
+</div>
+</div></section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Command-to-validate-available-environments">Command to validate available environments<a class="anchor-link" href="#Command-to-validate-available-environments">&#182;</a></h2><div class="highlight"><pre><span></span><span class="c1"># run in command line, do not run in jupyter notebooks.</span>
 <span class="o">(</span>base<span class="o">)</span> conda env list
 </pre></div>
@@ -16087,7 +16109,7 @@ Bank Merchant Andy Dufresne is convicted of the murder of his wife and her lover
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Command-to-install-some-third-party-modules-in-current-environment">Command to install some third-party modules in current environment<a class="anchor-link" href="#Command-to-install-some-third-party-modules-in-current-environment">&#182;</a></h2><div class="highlight"><pre><span></span><span class="c1"># run in command line, do not run in jupyter notebooks.</span>
-<span class="o">(</span>prgda<span class="o">)</span> conda install ipykernel numpy pandas openpyxl matplotlib <span class="c1"># or run pip install ...</span>
+<span class="o">(</span>prgda<span class="o">)</span> conda install ipykernel <span class="c1"># or run pip install ipykernel</span>
 </pre></div>
 
 </div>
