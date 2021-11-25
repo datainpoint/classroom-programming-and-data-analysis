@@ -12,3 +12,4 @@ dependencies:
     - RISE==5.7.1
     - openpyxl>=3.0
     - xlrd==2.0.1
+    - lxml==4.6
