@@ -4,8 +4,9 @@ import numpy as np
 import pandas as pd
 
 class TaiwanElection2022:
-    def __init__(self, data_folder: None):
+    def __init__(self, data_folder: None=None):
         list_dir = os.listdir(data_folder)
+        self.data_folder = data_folder
         self.file_names = [file for file in list_dir if ".xls" in file and "縣市" in file]
     def melt_tidy_dataframe(self, df) -> pd.core.frame.DataFrame:
         # updating columns
@@ -38,7 +39,10 @@ class TaiwanElection2022:
                 campaign = "縣市長"
             else:
                 campaign = "縣市議員"
-            file_path = f"data/{file_name}"
+            if self.data_folder is None:
+                file_path = f"{file_name}"
+            else:
+                file_path = f"{self.data_folder}/{file_name}"
             excel_file = pd.ExcelFile(file_path)
             sheet_names = excel_file.sheet_names
             for sheetName in sheet_names:
