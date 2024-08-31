@@ -1,0 +1,251 @@
+id,title,rating,runtime,url,parent_guide_id
+1,The Shawshank Redemption,9.3,142,https://imdb.com/title/tt0111161,7
+2,The Godfather,9.2,175,https://imdb.com/title/tt0068646,7
+3,The Dark Knight,9.0,152,https://imdb.com/title/tt0468569,5
+4,The Godfather Part II,9.0,202,https://imdb.com/title/tt0071562,7
+5,12 Angry Men,9.0,96,https://imdb.com/title/tt0050083,1
+6,Schindler's List,9.0,195,https://imdb.com/title/tt0108052,7
+7,The Lord of the Rings: The Return of the King,9.0,201,https://imdb.com/title/tt0167260,5
+8,Pulp Fiction,8.9,154,https://imdb.com/title/tt0110912,7
+9,The Lord of the Rings: The Fellowship of the Ring,8.9,178,https://imdb.com/title/tt0120737,5
+10,"The Good, the Bad and the Ugly",8.8,178,https://imdb.com/title/tt0060196,7
+11,Forrest Gump,8.8,142,https://imdb.com/title/tt0109830,5
+12,The Lord of the Rings: The Two Towers,8.8,179,https://imdb.com/title/tt0167261,5
+13,Fight Club,8.8,139,https://imdb.com/title/tt0137523,7
+14,Inception,8.8,148,https://imdb.com/title/tt1375666,5
+15,Star Wars: Episode V - The Empire Strikes Back,8.7,124,https://imdb.com/title/tt0080684,4
+16,The Matrix,8.7,136,https://imdb.com/title/tt0133093,7
+17,Goodfellas,8.7,145,https://imdb.com/title/tt0099685,7
+18,One Flew Over the Cuckoo's Nest,8.7,133,https://imdb.com/title/tt0073486,7
+19,Se7en,8.6,127,https://imdb.com/title/tt0114369,7
+20,Interstellar,8.7,169,https://imdb.com/title/tt0816692,5
+21,It's a Wonderful Life,8.6,130,https://imdb.com/title/tt0038650,4
+22,Seven Samurai,8.6,207,https://imdb.com/title/tt0047478,8
+23,The Silence of the Lambs,8.6,118,https://imdb.com/title/tt0102926,7
+24,Saving Private Ryan,8.6,169,https://imdb.com/title/tt0120815,7
+25,City of God,8.6,130,https://imdb.com/title/tt0317248,7
+26,Dune: Part Two,8.7,166,https://imdb.com/title/tt15239678,5
+27,Life Is Beautiful,8.6,116,https://imdb.com/title/tt0118799,5
+28,The Green Mile,8.6,189,https://imdb.com/title/tt0120689,7
+29,Terminator 2: Judgment Day,8.6,137,https://imdb.com/title/tt0103064,7
+30,Star Wars: Episode IV - A New Hope,8.6,121,https://imdb.com/title/tt0076759,4
+31,Back to the Future,8.5,116,https://imdb.com/title/tt0088763,4
+32,Spirited Away,8.6,125,https://imdb.com/title/tt0245429,4
+33,The Pianist,8.5,150,https://imdb.com/title/tt0253474,7
+34,Parasite,8.5,132,https://imdb.com/title/tt6751668,7
+35,Psycho,8.5,109,https://imdb.com/title/tt0054215,7
+36,Spider-Man: Across the Spider-Verse,8.6,140,https://imdb.com/title/tt9362722,4
+37,Gladiator,8.5,155,https://imdb.com/title/tt0172495,7
+38,The Lion King,8.5,88,https://imdb.com/title/tt0110357,2
+39,The Departed,8.5,151,https://imdb.com/title/tt0407887,7
+40,Léon: The Professional,8.5,110,https://imdb.com/title/tt0110413,7
+41,American History X,8.5,119,https://imdb.com/title/tt0120586,7
+42,Whiplash,8.5,106,https://imdb.com/title/tt2582802,7
+43,The Prestige,8.5,130,https://imdb.com/title/tt0482571,5
+44,Grave of the Fireflies,8.5,89,https://imdb.com/title/tt0095327,8
+45,Harakiri,8.6,133,https://imdb.com/title/tt0056058,8
+46,The Usual Suspects,8.5,106,https://imdb.com/title/tt0114814,7
+47,Casablanca,8.5,102,https://imdb.com/title/tt0034583,4
+48,The Intouchables,8.5,112,https://imdb.com/title/tt1675434,7
+49,Cinema Paradiso,8.5,174,https://imdb.com/title/tt0095765,4
+50,Modern Times,8.5,87,https://imdb.com/title/tt0027977,2
+51,Rear Window,8.5,112,https://imdb.com/title/tt0047396,4
+52,Once Upon a Time in the West,8.5,166,https://imdb.com/title/tt0064116,5
+53,Alien,8.5,117,https://imdb.com/title/tt0078748,7
+54,City Lights,8.5,87,https://imdb.com/title/tt0021749,2
+55,Django Unchained,8.5,165,https://imdb.com/title/tt1853728,7
+56,Apocalypse Now,8.4,147,https://imdb.com/title/tt0078788,7
+57,Memento,8.4,113,https://imdb.com/title/tt0209144,7
+58,12th Fail,8.9,147,https://imdb.com/title/tt23849204,8
+59,WALL·E,8.4,98,https://imdb.com/title/tt0910970,2
+60,Raiders of the Lost Ark,8.4,115,https://imdb.com/title/tt0082971,4
+61,The Lives of Others,8.4,137,https://imdb.com/title/tt0405094,7
+62,Sunset Boulevard,8.4,110,https://imdb.com/title/tt0043014,1
+63,Avengers: Infinity War,8.4,149,https://imdb.com/title/tt4154756,5
+64,Paths of Glory,8.4,88,https://imdb.com/title/tt0050825,1
+65,Spider-Man: Into the Spider-Verse,8.4,117,https://imdb.com/title/tt4633694,4
+66,Witness for the Prosecution,8.4,116,https://imdb.com/title/tt0051201,1
+67,The Shining,8.4,146,https://imdb.com/title/tt0081505,7
+68,The Great Dictator,8.4,125,https://imdb.com/title/tt0032553,2
+69,Aliens,8.4,137,https://imdb.com/title/tt0090605,7
+70,Inglourious Basterds,8.4,153,https://imdb.com/title/tt0361748,7
+71,The Dark Knight Rises,8.4,164,https://imdb.com/title/tt1345836,5
+72,Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb,8.4,95,https://imdb.com/title/tt0057012,4
+73,Coco,8.4,105,https://imdb.com/title/tt2380307,4
+74,American Beauty,8.3,122,https://imdb.com/title/tt0169547,7
+75,Oldboy,8.3,120,https://imdb.com/title/tt0364569,7
+76,Amadeus,8.4,160,https://imdb.com/title/tt0086879,4
+77,Toy Story,8.3,81,https://imdb.com/title/tt0114709,2
+78,Avengers: Endgame,8.4,181,https://imdb.com/title/tt4154796,5
+79,Das Boot,8.4,149,https://imdb.com/title/tt0082096,8
+80,Braveheart,8.3,178,https://imdb.com/title/tt0112573,7
+81,Good Will Hunting,8.3,126,https://imdb.com/title/tt0119217,7
+82,Princess Mononoke,8.3,134,https://imdb.com/title/tt0119698,5
+83,Joker,8.4,122,https://imdb.com/title/tt7286456,7
+84,Your Name.,8.4,106,https://imdb.com/title/tt5311514,8
+85,High and Low,8.4,143,https://imdb.com/title/tt0057565,8
+86,Once Upon a Time in America,8.3,229,https://imdb.com/title/tt0087843,7
+87,3 Idiots,8.4,170,https://imdb.com/title/tt1187043,5
+88,Singin' in the Rain,8.3,103,https://imdb.com/title/tt0045152,2
+89,Capernaum,8.4,126,https://imdb.com/title/tt8267604,7
+90,Come and See,8.4,142,https://imdb.com/title/tt0091251,8
+91,Requiem for a Dream,8.3,102,https://imdb.com/title/tt0180093,3
+92,Toy Story 3,8.3,103,https://imdb.com/title/tt0435761,2
+93,Star Wars: Episode VI - Return of the Jedi,8.3,131,https://imdb.com/title/tt0086190,4
+94,Eternal Sunshine of the Spotless Mind,8.3,108,https://imdb.com/title/tt0338013,7
+95,The Hunt,8.3,115,https://imdb.com/title/tt2106476,7
+96,2001: A Space Odyssey,8.3,149,https://imdb.com/title/tt0062622,2
+97,Oppenheimer,8.3,180,https://imdb.com/title/tt15398776,7
+98,Reservoir Dogs,8.3,99,https://imdb.com/title/tt0105236,7
+99,Ikiru,8.3,143,https://imdb.com/title/tt0044741,8
+100,Lawrence of Arabia,8.3,218,https://imdb.com/title/tt0056172,4
+101,The Apartment,8.3,125,https://imdb.com/title/tt0053604,1
+102,Incendies,8.3,131,https://imdb.com/title/tt1255953,7
+103,North by Northwest,8.3,136,https://imdb.com/title/tt0053125,1
+104,Citizen Kane,8.3,119,https://imdb.com/title/tt0033467,4
+105,M,8.3,99,https://imdb.com/title/tt0022100,6
+106,Vertigo,8.3,128,https://imdb.com/title/tt0052357,4
+107,Scarface,8.3,170,https://imdb.com/title/tt0086250,7
+108,Double Indemnity,8.3,107,https://imdb.com/title/tt0036775,1
+109,Full Metal Jacket,8.3,116,https://imdb.com/title/tt0093058,7
+110,Amélie,8.3,122,https://imdb.com/title/tt0211915,7
+111,Heat,8.3,170,https://imdb.com/title/tt0113277,7
+112,A Clockwork Orange,8.3,136,https://imdb.com/title/tt0066921,7
+113,Up,8.3,96,https://imdb.com/title/tt1049413,4
+114,To Kill a Mockingbird,8.3,129,https://imdb.com/title/tt0056592,1
+115,A Separation,8.3,123,https://imdb.com/title/tt1832382,5
+116,The Sting,8.3,129,https://imdb.com/title/tt0070735,4
+117,Indiana Jones and the Last Crusade,8.2,127,https://imdb.com/title/tt0097576,5
+118,Die Hard,8.2,132,https://imdb.com/title/tt0095016,7
+119,Metropolis,8.3,153,https://imdb.com/title/tt0017136,8
+120,Like Stars on Earth,8.3,162,https://imdb.com/title/tt0986264,4
+121,Snatch,8.2,102,https://imdb.com/title/tt0208092,7
+122,Hamilton,8.3,160,https://imdb.com/title/tt8503618,5
+123,L.A. Confidential,8.2,138,https://imdb.com/title/tt0119488,7
+124,1917,8.2,119,https://imdb.com/title/tt8579674,7
+125,Bicycle Thieves,8.3,89,https://imdb.com/title/tt0040522,8
+126,Taxi Driver,8.2,114,https://imdb.com/title/tt0075314,7
+127,Downfall,8.2,156,https://imdb.com/title/tt0363163,7
+128,Dangal,8.3,161,https://imdb.com/title/tt5074352,8
+129,For a Few Dollars More,8.2,132,https://imdb.com/title/tt0059578,7
+130,Batman Begins,8.2,140,https://imdb.com/title/tt0372784,5
+131,The Wolf of Wall Street,8.2,180,https://imdb.com/title/tt0993846,7
+132,Some Like It Hot,8.2,121,https://imdb.com/title/tt0053291,1
+133,Green Book,8.2,130,https://imdb.com/title/tt6966692,5
+134,The Kid,8.2,68,https://imdb.com/title/tt0012349,6
+135,The Father,8.2,97,https://imdb.com/title/tt10272386,5
+136,Judgment at Nuremberg,8.3,179,https://imdb.com/title/tt0055031,1
+137,The Truman Show,8.2,103,https://imdb.com/title/tt0120382,4
+138,All About Eve,8.2,138,https://imdb.com/title/tt0042192,1
+139,Top Gun: Maverick,8.2,130,https://imdb.com/title/tt1745960,5
+140,Shutter Island,8.2,138,https://imdb.com/title/tt1130884,7
+141,There Will Be Blood,8.2,158,https://imdb.com/title/tt0469494,7
+142,Casino,8.2,178,https://imdb.com/title/tt0112641,7
+143,Jurassic Park,8.2,127,https://imdb.com/title/tt0107290,5
+144,Ran,8.2,160,https://imdb.com/title/tt0089881,7
+145,The Sixth Sense,8.2,107,https://imdb.com/title/tt0167404,5
+146,Pan's Labyrinth,8.2,118,https://imdb.com/title/tt0457430,7
+147,Unforgiven,8.2,130,https://imdb.com/title/tt0105695,7
+148,No Country for Old Men,8.2,122,https://imdb.com/title/tt0477348,7
+149,A Beautiful Mind,8.2,135,https://imdb.com/title/tt0268978,5
+150,The Thing,8.2,109,https://imdb.com/title/tt0084787,7
+151,Kill Bill: Vol. 1,8.2,111,https://imdb.com/title/tt0266697,7
+152,The Treasure of the Sierra Madre,8.2,126,https://imdb.com/title/tt0040897,1
+153,Yojimbo,8.2,110,https://imdb.com/title/tt0055630,8
+154,Monty Python and the Holy Grail,8.2,91,https://imdb.com/title/tt0071853,4
+155,The Great Escape,8.2,172,https://imdb.com/title/tt0057115,1
+156,Finding Nemo,8.2,100,https://imdb.com/title/tt0266543,2
+157,Prisoners,8.2,153,https://imdb.com/title/tt1392214,7
+158,Rashomon,8.2,88,https://imdb.com/title/tt0042876,8
+159,Howl's Moving Castle,8.2,119,https://imdb.com/title/tt0347149,4
+160,The Elephant Man,8.2,124,https://imdb.com/title/tt0080678,4
+161,Chinatown,8.1,130,https://imdb.com/title/tt0071315,7
+162,Dial M for Murder,8.2,105,https://imdb.com/title/tt0046912,4
+163,Gone with the Wind,8.2,238,https://imdb.com/title/tt0031381,2
+164,V for Vendetta,8.2,132,https://imdb.com/title/tt0434409,7
+165,"Lock, Stock and Two Smoking Barrels",8.1,107,https://imdb.com/title/tt0120735,7
+166,The Secret in Their Eyes,8.2,129,https://imdb.com/title/tt1305806,7
+167,Inside Out,8.1,95,https://imdb.com/title/tt2096673,4
+168,Raging Bull,8.1,129,https://imdb.com/title/tt0081398,7
+169,"Three Billboards Outside Ebbing, Missouri",8.1,115,https://imdb.com/title/tt5027774,7
+170,Trainspotting,8.1,93,https://imdb.com/title/tt0117951,7
+171,The Bridge on the River Kwai,8.1,161,https://imdb.com/title/tt0050212,4
+172,Klaus,8.2,96,https://imdb.com/title/tt4729430,4
+173,Fargo,8.1,98,https://imdb.com/title/tt0116282,7
+174,Spider-Man: No Way Home,8.2,148,https://imdb.com/title/tt10872600,5
+175,Catch Me If You Can,8.1,141,https://imdb.com/title/tt0264464,5
+176,Warrior,8.1,140,https://imdb.com/title/tt1291584,5
+177,Gran Torino,8.1,116,https://imdb.com/title/tt1205489,7
+178,My Neighbor Totoro,8.1,86,https://imdb.com/title/tt0096283,2
+179,Million Dollar Baby,8.1,132,https://imdb.com/title/tt0405159,5
+180,Harry Potter and the Deathly Hallows: Part 2,8.1,130,https://imdb.com/title/tt1201607,5
+181,Children of Heaven,8.2,89,https://imdb.com/title/tt0118849,4
+182,12 Years a Slave,8.1,134,https://imdb.com/title/tt2024544,7
+183,Blade Runner,8.1,117,https://imdb.com/title/tt0083658,7
+184,Before Sunrise,8.1,101,https://imdb.com/title/tt0112471,7
+185,Ben-Hur,8.1,212,https://imdb.com/title/tt0052618,2
+186,Barry Lyndon,8.1,185,https://imdb.com/title/tt0072684,4
+187,The Grand Budapest Hotel,8.1,99,https://imdb.com/title/tt2278388,7
+188,Gone Girl,8.1,149,https://imdb.com/title/tt2267998,7
+189,Hacksaw Ridge,8.1,139,https://imdb.com/title/tt2119532,7
+190,The Gold Rush,8.1,95,https://imdb.com/title/tt0015864,1
+191,Memories of Murder,8.1,132,https://imdb.com/title/tt0353969,8
+192,In the Name of the Father,8.1,133,https://imdb.com/title/tt0107207,7
+193,Dead Poets Society,8.1,128,https://imdb.com/title/tt0097165,4
+194,Mad Max: Fury Road,8.1,120,https://imdb.com/title/tt1392190,7
+195,Wild Tales,8.1,122,https://imdb.com/title/tt3011894,7
+196,The General,8.1,78,https://imdb.com/title/tt0017925,6
+197,The Deer Hunter,8.1,183,https://imdb.com/title/tt0077416,7
+198,On the Waterfront,8.1,108,https://imdb.com/title/tt0047296,1
+199,"Monsters, Inc.",8.1,92,https://imdb.com/title/tt0198781,2
+200,Sherlock Jr.,8.2,45,https://imdb.com/title/tt0015324,6
+201,Jaws,8.1,124,https://imdb.com/title/tt0073195,4
+202,How to Train Your Dragon,8.1,98,https://imdb.com/title/tt0892769,4
+203,The Third Man,8.1,93,https://imdb.com/title/tt0041959,1
+204,The Wages of Fear,8.2,131,https://imdb.com/title/tt0046268,8
+205,Mary and Max,8.1,92,https://imdb.com/title/tt0978762,8
+206,Wild Strawberries,8.1,91,https://imdb.com/title/tt0050986,8
+207,Mr. Smith Goes to Washington,8.1,129,https://imdb.com/title/tt0031679,1
+208,Ratatouille,8.1,111,https://imdb.com/title/tt0382932,2
+209,Ford v Ferrari,8.1,152,https://imdb.com/title/tt1950186,5
+210,Tokyo Story,8.1,136,https://imdb.com/title/tt0046438,8
+211,The Big Lebowski,8.1,117,https://imdb.com/title/tt0118715,7
+212,Room,8.1,118,https://imdb.com/title/tt3170832,7
+213,The Seventh Seal,8.1,96,https://imdb.com/title/tt0050976,8
+214,Rocky,8.1,120,https://imdb.com/title/tt0075148,4
+215,Logan,8.1,137,https://imdb.com/title/tt3315342,7
+216,Spotlight,8.1,129,https://imdb.com/title/tt1895587,7
+217,Hotel Rwanda,8.1,121,https://imdb.com/title/tt0395169,5
+218,The Terminator,8.1,107,https://imdb.com/title/tt0088247,7
+219,Platoon,8.1,120,https://imdb.com/title/tt0091763,7
+220,The Passion of Joan of Arc,8.1,114,https://imdb.com/title/tt0019254,6
+221,La haine,8.1,98,https://imdb.com/title/tt0113247,8
+222,Before Sunset,8.1,80,https://imdb.com/title/tt0381681,7
+223,The Best Years of Our Lives,8.1,170,https://imdb.com/title/tt0036868,1
+224,Pirates of the Caribbean: The Curse of the Black Pearl,8.1,143,https://imdb.com/title/tt0325980,5
+225,The Exorcist,8.1,122,https://imdb.com/title/tt0070047,7
+226,Rush,8.1,123,https://imdb.com/title/tt1979320,7
+227,Jai Bhim,8.7,164,https://imdb.com/title/tt15097216,1
+228,Network,8.1,121,https://imdb.com/title/tt0074958,7
+229,Stand by Me,8.1,89,https://imdb.com/title/tt0092005,7
+230,The Wizard of Oz,8.1,102,https://imdb.com/title/tt0032138,2
+231,The Incredibles,8.0,115,https://imdb.com/title/tt0317705,4
+232,Hachi: A Dog's Tale,8.1,93,https://imdb.com/title/tt1028532,2
+233,The Handmaiden,8.1,145,https://imdb.com/title/tt4016934,8
+234,Into the Wild,8.1,148,https://imdb.com/title/tt0758758,7
+235,My Father and My Son,8.2,112,https://imdb.com/title/tt0476735,8
+236,The Sound of Music,8.1,172,https://imdb.com/title/tt0059742,2
+237,The Battle of Algiers,8.1,121,https://imdb.com/title/tt0058946,8
+238,To Be or Not to Be,8.1,99,https://imdb.com/title/tt0035446,1
+239,The Grapes of Wrath,8.1,129,https://imdb.com/title/tt0032551,1
+240,Groundhog Day,8.0,101,https://imdb.com/title/tt0107048,4
+241,Amores Perros,8.1,154,https://imdb.com/title/tt0245712,7
+242,The Iron Giant,8.1,86,https://imdb.com/title/tt0129167,4
+243,Rebecca,8.1,130,https://imdb.com/title/tt0032976,1
+244,Cool Hand Luke,8.1,127,https://imdb.com/title/tt0061512,1
+245,The Help,8.1,146,https://imdb.com/title/tt1454029,5
+246,It Happened One Night,8.1,105,https://imdb.com/title/tt0025316,1
+247,Aladdin,8.0,90,https://imdb.com/title/tt0103639,2
+248,Dances with Wolves,8.0,181,https://imdb.com/title/tt0099348,5
+249,Drishyam,8.2,163,https://imdb.com/title/tt4430212,8
+250,"Paris, Texas",8.1,145,https://imdb.com/title/tt0087884,7
